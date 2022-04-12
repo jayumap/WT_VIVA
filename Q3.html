@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Q3.css">
+    <script src="form.js"></script>
+    <title>Registration Form Validation</title>
+</head>
+<body>
+
+
+    <script>
+    function validateForm()
+        {
+            var name = document.forms["form"]["name"];
+            var lname = document.forms["form"]["lname"];
+            var ename = document.forms["form"]["ename"];
+            var mobile = document.forms["form"]["mobile"];
+            var address = document.forms["form"]["address"];
+            var password = document.forms["form"]["password"];
+            //var spec = document.forms["form"]["spec"];
+            //var dob = document.forms["form"]["dob"];
+        
+            if(fname.value=="")
+            {
+                window.alert("Enter First Name");
+                fname.focus();
+                return false;
+            }
+
+            if(lname.value=="")
+            {
+                window.alert("Enter Last Name");
+                lname.focus();
+                return false;
+            } 
+            
+            if(ename.value=="")
+            {
+                window.alert("Enter Email");
+                lname.focus();
+                return false;
+            } 
+            
+
+            if(mobile.value=="")
+            {
+                window.alert("Enter Mobile Number");
+                mobile.focus();
+                return false;
+            }
+
+            if(mobile.value.length < 10 || mobile.value.length>10)
+            {
+                window.alert("Enter valid Mobile Number");
+                mobile.focus();
+                return false;
+            }
+
+            if(address.value=="")
+            {
+                window.alert("Enter Address");
+                address.focus();
+                return false;
+            }
+
+            if(password.value=="")
+            {
+                window.alert("Enter Password");
+                password.focus();
+                return false;
+            }
+
+            if(spec.value=="-1")
+            {
+                window.alert("Select Specialization");
+                spec.focus();
+                return false;
+            }
+
+            if(dob.value=="")
+            {
+                window.alert("Enter Password");
+                dob.focus();
+                return false;
+            }
+
+
+        }
+        </script>
+
+
+
+    <h1>Registration Form</h1>
+    <form name="form" onsubmit="return validateForm()"
+    action="" method="post">
+
+<!--  form>table>tr*15>td*2  -->   
+    <table>
+    <tr>
+        <td>Name:</td>
+        <td><input type="text" name = "name" placeholder="Enter Name"/></td>
+    </tr>
+    
+    <tr>
+        <td>E-Mail:</td>
+        <td><input type="email" name = "ename" placeholder="xyz@gmail.com"/></td>
+    </tr>
+    <tr>
+        <td>Mobile Number:</td>
+        <td><input type="number" name="mobile" /></td>
+    </tr>
+    <tr>
+        <!-- <label>City:</label> -->
+        <td>City:</td>
+        <td><select>
+            <option>Mumbai</option>
+            <option>Pune</option>
+            <option>Nashik</option>
+            <option>Nagpur</option>
+
+        </select></td>
+        <!-- <select name="city">
+            <option value="Mumbai" value="mumbai"></option>
+            <option value="Pune"></option>
+            <option value="Nashik"></option>
+            <option value="Nagpur" selected></option>
+        </select> -->
+
+        
+    </tr>
+    <tr>
+        <td>Age</td>
+        <td><input type="number" name="age" /></td>
+    </tr>
+    <tr>
+        <td>Gender</td>
+        <td><input type="radio" name="gender" checked>Male
+            <input type="radio" name="gender">Female</td>
+    </tr>
+   
+    <tr>
+        <td>Qualification</td>
+        <td><input type="checkbox"/>Btech<br>
+            <input type="checkbox"/>Diploma<br>
+            <input type="checkbox"/>SSC
+        </td>
+    </tr>
+    <tr>
+        <td><input type="submit" value="Register"></td>
+    </tr>
+    </table>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,106 @@
+body
+{
+    background-image:url(new.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center ;
+    background-size: cover;
+    padding: 10px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: large;
+ 
+}
+
+h1{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+}
+
+h1:before,
+h1:after{
+    content: "";
+    /* flex: ; */
+    border-bottom: 3px solid white;
+    margin: auto;
+}
+
+form
+{
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="select"]
+{
+    width: 80%;
+    margin: 30px 10px;
+    padding: 10px 10px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+table
+{
+    width: 40%;
+
+}
+td
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus
+{
+    background-color: silver;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+select
+{
+    width: 80%;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    font-size: 15px;
+}
+
+textarea
+{
+    width: 80%;
+    margin: 30px 10px;
+    padding: 10px 10px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+select:focus,
+textare:focus{
+    background-color: bisque;
+    border: 3px solid black;
+}
+
+input[type="submit"]
+{
+    background-color: lightblue;
+    margin: 20px 15px;
+    border-radius: 10px;
+    padding: 20px, 10px;
+    color:black;
+    height: 40px;
+    width: 250%;
+    align-items: center;
+}
+
+
+.text
+{
+    color: white;
+    font-size: 100px;
+}

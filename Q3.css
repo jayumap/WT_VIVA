@@ -1,0 +1,117 @@
+body
+{
+    background-image:url(new.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center ;
+    background-size: cover;
+    padding: 10px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: large;
+ 
+}
+
+h1{
+    display: flex;
+    flex-direction: row;
+}
+h1:before,
+h1:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid black;
+    margin: auto;
+}
+
+form
+{
+    display: flex;
+    justify-content: center;
+}
+
+input[type="radio"]
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"]
+input[type="select"]
+{
+    width: 80%;
+    margin: 26px 10px;
+    padding: 10px 10px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+option
+{
+    border-radius: 10px;
+
+}
+
+table
+{
+    width: 40%;
+
+}
+td
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus
+{
+    background-color: silver;
+    border: 3px solid black;
+}
+
+select
+{
+    width: 80%;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    font-size: 15px;
+}
+
+textarea
+{
+    width: 80%;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    font-size: 15px;
+}
+
+select:focus,
+textare:focus{
+    background-color: white;
+    border: 3px solid black;
+   
+    
+}
+
+input[type="submit"]
+{
+    background-color: lightblue;
+    margin: 20px 15px;
+    border-radius: 10px;
+    padding: 20px, 10px;
+    color:black;
+    height: 40px;
+    width: 250%;
+    align-items: center;
+}
+
+
+.text
+{
+    color: black;
+    font-size: 100px;
+}
